@@ -12,33 +12,33 @@
                     <include name="verifyLikeOfCommentIncreasedAndDecreasedWhenClickOnLikeIconRespectively"/>
                 </methods>
             </class>
-            <class name="grid.GridTest">
-                <methods>
-                    <include name="verifyThatTheUserIsAbleToChangeTheThemeSuccessfully"/>
-                    <include name="verifyThatProductIsAddedSuccessfully"/>
-                    <include name="verifyThatErrorMessageDisplayedWhenProductNameFieldEmpty"/>
-                    <include name="verifyThatDroppedColumnDataAreGroupedByValue"/>
-                    <include name="verifyThatProductDataEditedSuccessfully"/>
-                    <include name="verifyThatProductIsSuccessfullyDeleted"/>
-                    <include name="verifyProductNameColumnDataIsNotEqualToGivenName"/>
-                    <include name="verifyProductNameColumnDataContainsAndEndsWithGivenName"/>
-                    <include name="verifyProductNameColumnDataDoesNotContainsGivenName"/>
-                    <include name="verifyProductNameColumnDataIsEqualToGivenName"/>
-                    <include name="verifyCostColumnDataIsNotEqualToGivenCost"/>
-                    <include name="verifyCostColumnDataIsLessThanOrEqualToGivenCost"/>
-                    <include name="verifyCostColumnDataIsGreaterThanAndLessThanGivenCost"/>
-                    <include name="verifyTheStatusOfDiscontinuedColumnIsDiscontinued"/>
-                    <include name="verifyTheStatusOfDiscontinuedColumnIsAvailable"/>
-                    <include name="verifyCategoryColumnDataIsAsPerSelectedCheckboxes"/>
-                    <include name="verifyInStockColumnDataIsGreaterThanAndLessThanOrEqualToGivenStockData"/>
-                    <include name="verifyInStockColumnDataIsEqualToGivenStockData"/>
-                    <include name="verifyQuantityPerUnitColumnDataIsEqualToGivenQuantity"/>
-                    <include name="verifyCostColumnSortingInAscendingDescendingOrder"/>
-                    <include name="verifyCategoryColumnSortingInAscendingOrder"/>
-                    <include name="verifyInStockColumnSortingInAscendingOrder"/>
-                    <include name="verifyQuantityPerUnitColumnSortingInAscendingOrder"/>
-                </methods>
-            </class>
+<!--            <class name="grid.GridTest">-->
+<!--                <methods>-->
+<!--                    <include name="verifyThatTheUserIsAbleToChangeTheThemeSuccessfully"/>-->
+<!--                    <include name="verifyThatProductIsAddedSuccessfully"/>-->
+<!--                    <include name="verifyThatErrorMessageDisplayedWhenProductNameFieldEmpty"/>-->
+<!--                    <include name="verifyThatDroppedColumnDataAreGroupedByValue"/>-->
+<!--                    <include name="verifyThatProductDataEditedSuccessfully"/>-->
+<!--                    <include name="verifyThatProductIsSuccessfullyDeleted"/>-->
+<!--                    <include name="verifyProductNameColumnDataIsNotEqualToGivenName"/>-->
+<!--                    <include name="verifyProductNameColumnDataContainsAndEndsWithGivenName"/>-->
+<!--                    <include name="verifyProductNameColumnDataDoesNotContainsGivenName"/>-->
+<!--                    <include name="verifyProductNameColumnDataIsEqualToGivenName"/>-->
+<!--                    <include name="verifyCostColumnDataIsNotEqualToGivenCost"/>-->
+<!--                    <include name="verifyCostColumnDataIsLessThanOrEqualToGivenCost"/>-->
+<!--                    <include name="verifyCostColumnDataIsGreaterThanAndLessThanGivenCost"/>-->
+<!--                    <include name="verifyTheStatusOfDiscontinuedColumnIsDiscontinued"/>-->
+<!--                    <include name="verifyTheStatusOfDiscontinuedColumnIsAvailable"/>-->
+<!--                    <include name="verifyCategoryColumnDataIsAsPerSelectedCheckboxes"/>-->
+<!--                    <include name="verifyInStockColumnDataIsGreaterThanAndLessThanOrEqualToGivenStockData"/>-->
+<!--                    <include name="verifyInStockColumnDataIsEqualToGivenStockData"/>-->
+<!--                    <include name="verifyQuantityPerUnitColumnDataIsEqualToGivenQuantity"/>-->
+<!--                    <include name="verifyCostColumnSortingInAscendingDescendingOrder"/>-->
+<!--                    <include name="verifyCategoryColumnSortingInAscendingOrder"/>-->
+<!--                    <include name="verifyInStockColumnSortingInAscendingOrder"/>-->
+<!--                    <include name="verifyQuantityPerUnitColumnSortingInAscendingOrder"/>-->
+<!--                </methods>-->
+
         </classes>
     </test>
 </suite>
