@@ -9,21 +9,20 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main', url: 'https://github.com/GunjanDonga/SeleniumJavaDemo.git'
+                git branch: 'main', url: 'https://github.com/GunjanDonga/SeleniumJavaDemo.git'
             }
         }
 
-       stage('Build') {
-           steps {
-               // Run tests but never fail the build here
-               catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                   sh 'mvn clean install'
-               }
-           }
-       }
+        stage('Build') {
+            steps {
+                // Only build, do NOT run tests
+                sh 'mvn clean install -DskipTests'
+            }
+        }
 
         stage('Test') {
             steps {
+                // Run tests separately
                 sh 'mvn test'
             }
         }
