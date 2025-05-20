@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main', url: 'https://github.com/GunjanDonga/SeleniumJavaDemo.git'
+               git branch: 'main', url: 'https://github.com/your-username/your-repo.git'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
 
         stage('Publish Results') {
             steps {
-                junit '**/target/surefire-reports/*.xml'
+                junit '**/surefire-reports/*.xml'
             }
         }
     }
