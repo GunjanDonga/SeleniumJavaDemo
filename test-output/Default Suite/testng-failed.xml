@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TelerikBlazer(failed)">
     <classes>
-      <class name="grid.GridTest">
+      <class name="card.CardTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyThatProductDataEditedSuccessfully"/>
-          <include name="deleteScreenshot"/>
+          <include name="verifyCardLikeIncreasedAndDecreasedWhenClickOnLikeIconRespectively"/>
         </methods>
-      </class> <!-- grid.GridTest -->
+      </class> <!-- card.CardTest -->
     </classes>
   </test> <!-- TelerikBlazer(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

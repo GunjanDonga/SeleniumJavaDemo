@@ -32,5 +32,11 @@ pipeline {
                 junit '**/surefire-reports/*.xml'
             }
         }
-    }
+}
+        post {
+                always {
+                    archiveArtifacts artifacts: 'test-output/**/*.html', fingerprint: true
+                }
+            }
+
 }

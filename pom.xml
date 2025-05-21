@@ -61,4 +61,29 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>qa</id>
+            <properties>
+                <env>qa</env>
+                <baseUrl>https://demos.telerik.com/blazor-ui/card/overview</baseUrl>
+            </properties>
+        </profile>
+        <profile>
+            <id>staging</id>
+            <properties>
+                <env>staging</env>
+                <baseUrl>https://staging.example.com</baseUrl>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <env>prod</env>
+                <baseUrl>https://www.example.com</baseUrl>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>

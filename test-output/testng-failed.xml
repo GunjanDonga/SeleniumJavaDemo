@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome-headless"/>
-  <test thread-count="5" name="C:/Users/gunjan/IdeaProjects/TelerikBlazer(failed)">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TelerikBlazer(failed)">
     <classes>
-      <class name="grid.GridTest">
+      <class name="card.CardTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyInStockColumnDataIsEqualToGivenStockData"/>
-          <include name="verifyCostColumnDataIsNotEqualToGivenCost"/>
-          <include name="deleteScreenshot"/>
+          <include name="verifyCardLikeIncreasedAndDecreasedWhenClickOnLikeIconRespectively"/>
         </methods>
-      </class> <!-- grid.GridTest -->
+      </class> <!-- card.CardTest -->
     </classes>
-  </test> <!-- C:/Users/gunjan/IdeaProjects/TelerikBlazer(failed) -->
-</suite> <!-- Failed suite [All Test Suite] -->
+  </test> <!-- TelerikBlazer(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->
