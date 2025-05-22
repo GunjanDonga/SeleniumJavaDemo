@@ -33,10 +33,20 @@ pipeline {
             }
         }
 }
-        post {
-                always {
-                    archiveArtifacts artifacts: 'test-output/**/*.html', fingerprint: true
-                }
-            }
+       post {
+           always {
+               archiveArtifacts artifacts: 'test-output/**/*.html', fingerprint: true
+
+               publishHTML(target: [
+                   reportName: 'Extent Report',
+                   reportDir: 'test-output',
+                   reportFiles: 'extent-report.html',
+                   keepAll: true,
+                   alwaysLinkToLastBuild: true,
+                   allowMissing: false
+               ])
+           }
+       }
+
 
 }
