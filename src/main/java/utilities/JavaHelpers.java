@@ -28,16 +28,6 @@ public class JavaHelpers {
         Properties prop = accessPropertiesFile(propertyFile);
         return prop.getProperty(propertyName);
     }
-    public static class EnvironmentConfig {
-        public static String getBaseUrl() {
-            String env = System.getProperty("env", "qa");
-            return switch (env) {
-                case "staging" -> "https://staging.example.com";
-                case "prod" -> "https://www.example.com";
-                default -> "https://demos.telerik.com/blazor-ui/card/overview";
-            };
-        }
-    }
 
     /**
      * Access property file

@@ -20,7 +20,7 @@ public class CardTest extends BaseTest {
         CardOverviewPO cardOverviewPO = new CardOverviewPO(driver);
 
         Reporter.log("Step 1: Navigate to url");
-        selenium.navigateToPage(JavaHelpers.EnvironmentConfig.getBaseUrl());
+        selenium.navigateToPage(Constants.CardURL);
 
         Reporter.log("Step 2: Verify that the user is successfully navigated to card overview page");
         Assert.assertEquals(cardOverviewPO.getTitle(), expectedTitle, "Title of page doesn't matched");
